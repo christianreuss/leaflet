@@ -1,0 +1,23 @@
+---
+title: "Data Product Week 2"
+author: "CR"
+date: "10 7 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
+
+## R Markdown
+
+
+
+```{r cars,eval=TRUE}
+map <- leaflet() %>%
+  addTiles() %>% 
+  addMarkers(lat=49.793, lng=9.927, popup = "Amazing Place in Wuerzburg, visited 2019")
+map
+```
+
